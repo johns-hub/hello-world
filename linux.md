@@ -5,7 +5,6 @@
 - mem
 - id = idle
 - load average: 0.00, 0.00, 0.00 平均值大于0.6繁忙
-
   ```shell
 [root@192.168.1.1 ~]$ top
 top - 23:35:45 up 890 days, 34 min,  1 user,  load average: 0.00, 0.00, 0.00
