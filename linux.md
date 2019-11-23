@@ -5,7 +5,8 @@
 - mem
 - id = idle
 - load average: 0.00, 0.00, 0.00 平均值大于0.6繁忙
-  ```shell
+
+```shell
 [root@192.168.1.1 ~]$ top
 top - 23:35:45 up 890 days, 34 min,  1 user,  load average: 0.00, 0.00, 0.00
 Tasks: 150 total,   1 running, 149 sleeping,   0 stopped,   0 zombie
@@ -15,18 +16,17 @@ Cpu2  :  0.3%us,  0.3%sy,  0.3%ni, 99.0%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
 Cpu3  :  0.0%us,  0.3%sy,  0.3%ni, 99.3%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
 Mem:   3922688k total,  2580256k used,  1342432k free,   182144k buffers
 Swap:  8392696k total,    11060k used,  8381636k free,   846536k cached
-
 PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                   
 1682 work      39  19 5128m 1.2g  11m S  1.3 31.5   4:40.74 java                                                       
 21782 root      39  19  535m  17m 3848 S  0.7  0.4   1091:49 leoAgent 
 
 [root@192.168.1.1 ~]$ uptime
 23:35:55 up 890 days, 34 min,  1 user,  load average: 0.00, 0.00, 0.00
-  ```
+```
 
 2.内存
 
-```shell
+  ```shell
 [root@192.168.1.1 ~]$ free
 total       used       free     shared    buffers     cached
 Mem:       3922688    2579944    1342744          0     182144     846576
@@ -44,7 +44,7 @@ total       used       free     shared    buffers     cached
 Mem:          3830       2519       1311          0        177        826
 -/+ buffers/cache:       1514       2315
 Swap:         8195         10       8185
-```
+  ```
 
 3.硬盘
 
