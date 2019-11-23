@@ -1,9 +1,10 @@
 1.查看整体机器性能
-  top
-  1.1 cpu 键盘数字键1
-  1.2 mem
-  1.3 id = idle
-  1.4 load average: 0.00, 0.00, 0.00 平均值大于0.6繁忙
+   top
+
+- cpu 键盘数字键1
+- mem
+- id = idle
+- load average: 0.00, 0.00, 0.00 平均值大于0.6繁忙
 
   ```shell
 [root@192.168.1.1 ~]$ top
@@ -93,4 +94,3 @@ Device:         rrqm/s   wrqm/s     r/s     w/s    rkB/s    wkB/s avgrq-sz avgqu
 scd0              0.00     0.00    0.00    0.00     0.00     0.00     0.00     0.00    0.00   0.00   0.00
 vda               0.00     8.50    0.00    3.00     0.00    46.00    30.67     0.00    1.17   0.83   0.25
 ```
-
