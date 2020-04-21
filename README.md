@@ -8,3 +8,5 @@
 
 [raft协议](http://thesecretlivesofdata.com/raft/)
 
+``` shell
+mvn archetype:generate -DarchetypeArtifactId=maven-archetype-quickstart -DgroupId=com.elong.mobile -DartifactId=common-search-agent  -Dversion=1.0-SNAPSHOT -Dpackage=com.elong.hotel.searchagent.thrift
