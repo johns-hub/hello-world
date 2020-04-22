@@ -13,6 +13,6 @@ mvn archetype:generate -DarchetypeArtifactId=maven-archetype-quickstart -DgroupI
 ``` 
 
 ``` shell
-$ git reset --hard commit_id    # 退到/进到 指定commit的sha码
-$ git push origin HEAD --force  # 强推到远程
+git reset --hard commit_id    # 退到/进到 指定commit的sha码
+git push origin HEAD --force  # 强推到远程
 ``` 
