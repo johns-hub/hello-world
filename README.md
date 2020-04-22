@@ -10,7 +10,9 @@
 
 ``` shell
 mvn archetype:generate -DarchetypeArtifactId=maven-archetype-quickstart -DgroupId=com.elong.mobile -DartifactId=common-search-agent  -Dversion=1.0-SNAPSHOT -Dpackage=com.elong.hotel.searchagent.thrift
+``` 
 
 ``` shell
 $ git reset --hard commit_id    # 退到/进到 指定commit的sha码
 $ git push origin HEAD --force  # 强推到远程
+``` 
