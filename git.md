@@ -28,4 +28,10 @@ $ git reset --hard a8f946f
 ```shell
 $ git push origin HEAD --force  
 ```
-
+######  记住密码
+```shell
+$ git config credential.helper store
+$ git push http://example.com/repo.git
+Username: <type your username>
+Password: <type your password>
+```
