@@ -1,4 +1,7 @@
-1.查看整体机器性能
+# Linux命令
+
+## 1.查看整体机器性能
+
    top
 
 - cpu 键盘数字键1
@@ -24,7 +27,7 @@ PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND
 23:35:55 up 890 days, 34 min,  1 user,  load average: 0.00, 0.00, 0.00
 ```
 
-2.内存
+## 2.内存
 
   ```shell
 $ free
@@ -46,7 +49,7 @@ Mem:          3830       2519       1311          0        177        826
 Swap:         8195         10       8185
   ```
 
-3.硬盘
+## 3.硬盘
 
 ```shell
 $ df
@@ -64,7 +67,7 @@ tmpfs                 1.9G     0  1.9G   0% /dev/shm
 /dev/vda5             1.5G  625M  806M  44% /data
 ```
 
-4.cpu (包含但不限于)
+## 4.cpu (包含但不限于)
 
 ```shell
 $ vmstat -n 2 3
@@ -75,7 +78,7 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
 0  0  11060 1340376 182144 846688    0    0     0     2  767 1393  0  0 99  0  0
 ```
 
-5.磁盘IO
+## 5.磁盘IO
 
 ```shell
 $ iostat -xdk 2 3
@@ -93,3 +96,9 @@ Device:         rrqm/s   wrqm/s     r/s     w/s    rkB/s    wkB/s avgrq-sz avgqu
 scd0              0.00     0.00    0.00    0.00     0.00     0.00     0.00     0.00    0.00   0.00   0.00
 vda               0.00     8.50    0.00    3.00     0.00    46.00    30.67     0.00    1.17   0.83   0.25
 ```
+
+# Linux网络
+
+- **Host-Only**: The VM will be assigned one IP, but it's only accessible by the box VM is running on. No other computers can access it.
+- **NAT**: Just like your home network with a wireless router, the VM will be assigned in a separate subnet, like `192.168.6.1` is your host computer, and VM is `192.168.6.3`, then your VM can access outside network like your host, but no outside access to your VM directly, it's protected.
+- **Bridged**: Your VM will be in the same network as your host, if your host IP is `172.16.120.45` then your VM will be like `172.16.120.50`. It can be accessed by all computers in your host network.
