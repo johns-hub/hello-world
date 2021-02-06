@@ -2,13 +2,6 @@
 
 ## 1.查看整体机器性能
 
-   top
-
-- cpu 键盘数字键1
-- mem
-- id = idle
-- load average: 0.00, 0.00, 0.00 平均值大于0.6繁忙
-
 ```shell
 $ top
 top - 23:35:45 up 890 days, 34 min,  1 user,  load average: 0.00, 0.00, 0.00
@@ -22,10 +15,24 @@ Swap:  8392696k total,    11060k used,  8381636k free,   846536k cached
 PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                   
 1682 work      39  19 5128m 1.2g  11m S  1.3 31.5   4:40.74 java                                                       
 21782 root      39  19  535m  17m 3848 S  0.7  0.4   1091:49 leoAgent 
+```
 
+- cpu 键盘数字键1
+
+- mem
+
+- id = idle
+
+- load average: 0.00, 0.00, 0.00 平均值大于0.6繁忙
+
+  
+
+```shell
 [root@192.168.1.1 ~]$ uptime
 23:35:55 up 890 days, 34 min,  1 user,  load average: 0.00, 0.00, 0.00
 ```
+
+
 
 ## 2.内存
 
@@ -97,8 +104,29 @@ scd0              0.00     0.00    0.00    0.00     0.00     0.00     0.00     0
 vda               0.00     8.50    0.00    3.00     0.00    46.00    30.67     0.00    1.17   0.83   0.25
 ```
 
+## Disable Firewalld
+
+```shell
+systemctl disable firewalld
+```
+
+## Stop Firewalld
+
+```
+systemctl stop firewalld
+```
+
+## Check the Status of Firewalld
+
+```
+systemctl status firewalld
+```
+
+
+
 # Linux网络
 
 - **Host-Only**: The VM will be assigned one IP, but it's only accessible by the box VM is running on. No other computers can access it.
 - **NAT**: Just like your home network with a wireless router, the VM will be assigned in a separate subnet, like `192.168.6.1` is your host computer, and VM is `192.168.6.3`, then your VM can access outside network like your host, but no outside access to your VM directly, it's protected.
 - **Bridged**: Your VM will be in the same network as your host, if your host IP is `172.16.120.45` then your VM will be like `172.16.120.50`. It can be accessed by all computers in your host network.
+
