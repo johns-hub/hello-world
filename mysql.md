@@ -11,5 +11,11 @@
   
   #创建唯一索引
   ALTER TABLE `user` ADD CONSTRAINT uk_name UNIQUE(NAME);  
+  
+  #insert-into-values-select-from 
+  INSERT INTO table1 ( column1, column2, someInt, someVarChar )
+  SELECT  table2.column1, table2.column2, 8, 'some string etc.'
+  FROM    table2
+  WHERE   table2.ID = 7;
 ```
 
