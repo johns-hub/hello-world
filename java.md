@@ -11,7 +11,7 @@ $ javap -c MyServiceImpl
 $ mvn archetype:generate -DarchetypeArtifactId=maven-archetype-quickstart -DgroupId=com.sample -DartifactId=sample-common -Dversion=1.0-SNAPSHOT -Dpackage=com.sample.thrift
 ```
 
-######jconsole remote
+###### jconsole remote
 ```
 java -cp case_java8-1.0-SNAPSHOT-jar-with-dependencies.jar  \
 -Djava.rmi.server.hostname='192.168.245.150' \
